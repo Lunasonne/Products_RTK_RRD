@@ -1,0 +1,50 @@
+ .page {
+     display: flex;
+     align-items: flex-start;
+     gap: 40px;
+     margin-top: 40px;
+     padding: 70px;
+ }
+
+ .page img {
+     max-width: 400px;
+ }
+
+ .buttons {
+     display: flex;
+     gap: 10px;
+     margin-top: 40px;
+ }
+
+ .productInfo {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     padding: 10px;
+     color: rgb(168, 4, 4);
+     background: rgba(99, 153, 107, 0.5);
+     font-size: 25px;
+ }
+
+ .productInfo p {
+     font-weight: 600;
+     font-size: 20px;
+ }
+
+ .productInfo h2 {
+     font-weight: 500;
+     font-size: 40px;
+ }
+
+ .productInfo h3 {
+     font-weight: 500;
+     font-size: 35px;
+ }
+
+ .moreBtn {
+     padding: 10px 10px;
+     border-radius: 6px;
+     color: rgb(240, 5, 5);
+     text-decoration: none;
+     font-size: 35px;
+ }
