@@ -8,7 +8,7 @@ export default function Home(): JSX.Element {
         <h1 className="text-5xl font-bold mb-4">Welcome to our Fashion House</h1>
             <div className="flex flex-col items-center text-center gap-15 mt-6">
                 <img
-                    src="/FashionHomeFoto.png"
+                  src={`${import.meta.env.BASE_URL}FashionHomeFoto.png`}
                     alt="FotoFachionHome"
                     className="w-3/4 max-w-2xl rounded-xl shadow-lg"/>
             

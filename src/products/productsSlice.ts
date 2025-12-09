@@ -21,7 +21,7 @@ const initialState: ProductsState = {
 };
 
 export const fetchProducts = createAsyncThunk<Product[]>(
-  "products/fetchProducts",
+  "products/fetchProducts",  // это название action type, которое Redux Toolkit использует для генерации трёх экшенов
   async () => {
     const res = await fetch("https://fakestoreapi.com/products");
 
@@ -37,8 +37,7 @@ const productsSlice = createSlice({
   initialState,
   reducers: {
     removeProduct(state, action: PayloadAction<number>) {
-      state.items = state.items.filter((p) => p.id !== action.payload);
-    },
+      state.items = state.items.filter((p) => p.id !== action.payload);},
   },
   extraReducers: (builder) => {
     builder

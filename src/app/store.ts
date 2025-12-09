@@ -1,12 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
 import productsReducer from "../products/productsSlice";
 import cartReducer from "../cart/cartSlice";
+import authReducer from "../auth/authSlice"
 
-//→ Импортируем configureStore — простой способ создать store.
+
 export const store = configureStore({
     reducer: {
         products: productsReducer,
-       cart: cartReducer
+        cart: cartReducer,
+        auth: authReducer,
     }
 })
 

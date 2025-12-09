@@ -7,21 +7,23 @@ import './App.css'
 import Products from "./pages/Products"
 import Cart from "./pages/Cart"
 import ProductPage from "./pages/ProductPage"
+import ProtectedRoute from "./components/ProtectedRoute"
+import Login from "./auth/Login"
 
 function App(): JSX.Element {
 
   return (
     <Routes>
       <Route path="/" element={<LayOut />}>
-        <Route index element={<Home />} />
-        <Route path="home" element={<Home />} />
-        <Route path="products" element={<Products />} />
+        <Route index element={<Home/>}/>
+        <Route path="home" element={<Home/>} />
+        <Route path="products" element={<ProtectedRoute outlet={<Products />} />} />
         <Route path="products/:id" element={<ProductPage />} />
         <Route path="cart" element={<Cart />} />
-        <Route path="*" element={<NotFound />} />
+         <Route path="*" element={<NotFound />} />
+        <Route path="login" element={<Login />} />  
       </Route>
     </Routes>
-
   )
 }
 export default App

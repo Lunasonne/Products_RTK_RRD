@@ -7,7 +7,7 @@ import { Outlet } from "react-router-dom";
   return (
    <div
   className="min-h-screen w-full bg-cover bg-center bg-no-repeat relative"
-  style={{ backgroundImage: "url(/willow2.jpg)" }}
+  style={{ backgroundImage: "url(./willow2.jpg)" }}
 >
   <div className="fixed top-0 left-0 w-full z-50">
     <NavBar />

@@ -1,7 +1,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 15px;
+  gap: 30px;
 }
 
 .card {
@@ -11,6 +11,8 @@
   padding: 20px;
   box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
   transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -61,8 +63,7 @@
 }
 
 .addBtn {
-  margin-top: 12px;
-  padding: 10px 14px;
+  margin-top: 10px;
   border: none;
   border-radius: 10px;
   background: rgb(99, 163, 99);
@@ -74,16 +75,23 @@
 
 .moreBtn {
   color: rgb(216, 16, 9);
-  margin-left: 5px;
   font-size: 18px;
+  margin-top: 14px;
 }
 
 .addBtn:hover {
-  background: rgb(191, 216, 155);
+  background: rgb(100, 190, 100);
 }
 
 .status {
   font-size: 20px;
   text-align: center;
   margin-top: 40px;
+}
+
+.buttons {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
 }

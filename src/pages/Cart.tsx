@@ -10,7 +10,7 @@ const Cart = () => {
     return (
       <section 
        className= "w-screen h-[600px] relative flex items-end justify-center bg-no-repeat bg-contain"
-        style={{ backgroundImage: "url('/emptyBascet.jpg')",  backgroundPosition: "36% center"}}>
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}emptyBascet.jpg)`,  backgroundPosition:"36% center"}}>
         <div className= "absolute bottom-7 text-amber-600 text-4xl font-bold px-6 py-3 rounded-md"
     style={{ left: "42%", transform: "translateX(-50%)" }}>
           The cart is empty
