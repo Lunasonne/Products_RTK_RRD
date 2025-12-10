@@ -1,13 +1,13 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/Products_RTK_RRD/assets/(.*)\\.js",
       "destination": "/index.html"
     }
   ],
   "headers": [
     {
-      "source": "/(.*)",
+      
       "headers": [
         {
           "key": "X-Frame-Options",
